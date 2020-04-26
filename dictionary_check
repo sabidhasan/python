@@ -1,0 +1,19 @@
+#This file checks whether a given string is in a dictionary.
+#This example uses countries and their respective capitals but there this code can easily be altered to apply to a variety of different
+#scenarios. Dependent on the scenario, it may be necessary to use some other methods in line 15 such as isnumeric() or isalnum().  
+
+capitals = {'France':'Paris','Spain':'Madrid','United Kingdom':'London',
+            'India':'New Delhi','United States':'Washington DC','Italy':'Rome',
+            'Denmark':'Copenhagen','Germany':'Berlin','Greece':'Athens',
+            'Bulgaria':'Sofia','Ireland':'Dublin','Mexico':'Mexico City'
+            }
+user_country = input("Enter a country: ")
+if user_country.title() in capitals:
+    print(capitals[user_country.title()])
+else:
+    while True:
+        if user_country.isalpha() is False:
+            user_country = input("You must enter an alpha string. ")
+        else:
+            print(user_country + " is not in the dictionary.")
+            break
