@@ -1,9 +1,11 @@
-#This code declares a class called BankAccount. Within this class we then use the __init__ function to create a variable 'balance'.
-#We also define three functions: 'withdraw', 'deposit' and 'display'.
-#
-#To improve upon this code moving forwards, I will incorperate a webscraping tool into this that takes live data from a currency
-#conversion website. Then we can include functions within each of the already-present functions to allow for a currency of choice
-#to be chosen.
+'''
+This code declares a class called BankAccount. Within this class we then use the __init__ function to create a variable 'balance'.
+We also define three functions: 'withdraw', 'deposit' and 'display'.
+
+To improve upon this code moving forwards, I will incorperate a webscraping tool into this that takes live data from a currency
+conversion website. Then we can include functions within each of the already-present functions to allow for a currency of choice
+to be chosen.
+'''
 
 class BankAccount(object):
 
