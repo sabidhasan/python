@@ -55,13 +55,13 @@ class BankAccount(object):
         GBP, EUR, USD, NZD, AUD, CAD, JPY, ZAR, AED, INR, TRY, CHF. 
         What currency do you want to withdraw your money in? '''))
         
-        #Should insert implement error handling here for if a valid entry isn't entered
+        # Should implement error handling here for when an invalid currency is entered.
         
         while True:
            withdraw_amount = float(input('How many ' + currency.upper() + 's would you like to withdraw? '))
            
-           #each if statement calculates the withdrawal amount in GBP for any of the given currencies
-           #Should try to make this portion of the program more elegent with a function
+           # Each if statement calculates the withdrawal amount in GBP for any of the given currencies
+           # Should try to make this portion of the program more elegent with a function
            
            if currency.upper() == 'EUR':
                withdraw_amount /= float(currency_func(1)[0])
